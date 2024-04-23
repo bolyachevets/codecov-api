@@ -25,7 +25,7 @@ class StorageService(MinioStorageService):
         if "host" not in self.minio_config:
             self.minio_config["host"] = "minio"
         if "port" not in self.minio_config:
-            self.minio_config["port"] = 9000
+            self.minio_config["port"] = None
         if "iam_auth" not in self.minio_config:
             self.minio_config["iam_auth"] = False
         if "iam_endpoint" not in self.minio_config:
